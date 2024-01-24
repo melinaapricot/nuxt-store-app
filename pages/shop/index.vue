@@ -8,6 +8,10 @@
 
 <script setup lang="ts">
 
+    definePageMeta({
+        layout: 'items'
+    })
+
 </script>
 
 <style scoped>
