@@ -17,6 +17,10 @@
     // fetch shop items
     const { data: items } = await useFetch('https://fakestoreapi.com/products')
 
+    // useSeoMeta instead of useHead because it works reactively. 
+    useSeoMeta({
+        title: 'Merch'
+    })
 </script>
 
 <style scoped>
