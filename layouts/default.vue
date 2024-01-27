@@ -1,18 +1,21 @@
 <template>
-    <header>
-        <nav>
-            <NuxtLink to="/">Nuxt Store App</NuxtLink>
-            <ul>
+    <header class="shadow-sm bg-white">
+        <nav class="container mx-auto p-4 flex justify-between">
+            <NuxtLink to="/" class="font-bold">Nuxt Store App</NuxtLink>
+            <ul class="flex gap-4">
                 <li><NuxtLink to="/">Home</NuxtLink></li>
                 <li><NuxtLink to="/about">About</NuxtLink></li>
-                <li><NuxtLink to="/shop">Shop</NuxtLink></li>
+                <li><NuxtLink to="/shop" class="btn">Shop</NuxtLink></li>
             </ul> 
         </nav>
     </header>
 
     <!-- Output page content -->
     <main> 
-        <slot />    
+        <div class="container mx-auto p-4">
+            <slot />    
+
+        </div>
     </main>
 </template>
 
